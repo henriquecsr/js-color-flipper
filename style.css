@@ -19,7 +19,7 @@ button {
     cursor: pointer;
 }
 
-.navbar {
+#navbar {
     background-color: var(--white);
     display:flex;
     justify-content: space-between;
