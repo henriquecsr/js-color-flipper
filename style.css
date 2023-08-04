@@ -1,14 +1,28 @@
+@import url('https://fonts.googleapis.com/css2?family=REM:wght@500&family=Raleway&display=swap');
 
+:root {
+    --beige: #DAD8D4;
+    --darkGray: #3d414d;
+    --lightBlue: #6f8ddf;
+    --white: #FFFFFF;
+    --transition: 0.5s;
+}
 
 body {
+    background-color: var(--beige);
+    color: var(--darkGray);
+    font-family: 'Raleway', sans-serif;
     margin: 0;
-    background-color: #6d6d6d;
+}
+
+button {
+    cursor: pointer;
 }
 
 .navbar {
+    background-color: var(--white);
     display:flex;
     justify-content: space-between;
-    background-color: #FFFFFF;
     padding: 0% 15%;
 }
 
@@ -17,40 +31,48 @@ body {
 }
 
 .nav-logo {
+    color: var(--darkGray);
+    font-family: 'REM', sans-serif;
     font-size: 1.5rem;
 }
 
 .nav-button {
-    border: none;
     background-color: transparent;
+    border: none;
     font-size: 1.25rem;
 }
 
 .main-container{
+    align-items: center;
     display: flex;
-    margin-top: 17%;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
+    margin-top: 17%;
 }
 
 .main-textbox {
-    background-color: #000000;
-    color: #FFFFFF;
+    background-color: var(--darkGray);
+    border-radius: 15px;
+    color: var(--white);
+    font-size: 2rem;
     margin: 0;
     padding: 1.5rem;
-    font-size: 2rem;
-    border-radius: 25px;
 }
  .color-text {
-    color: #6f8ddf
+    color: var(--lightBlue)
  }
 
 .color-button {
+    background-color: inherit;
+    border: 4px solid var(--darkGray);
+    border-radius: 15px;
+    font-size: 1.5rem;
     margin: 2%;
     padding: 0.75rem 1.5rem;
-    background-color: inherit;
-    border: 4px solid;
-    border-radius: 25px;
-    font-size: 1.5rem;
+    transition: var(--transition);
+}
+
+.color-button:hover {
+    background-color: var(--darkGray);
+    color: var(--white);
 }
